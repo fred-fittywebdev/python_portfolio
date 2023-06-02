@@ -19,3 +19,9 @@ with col_2:
     développement web.
     """
     st.info(content)
+
+content_2 = """
+Below you can find some of the apps i have built in Python. Feel free to contact me!
+"""
+
+st.write(content_2)
