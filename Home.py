@@ -3,7 +3,7 @@ import pandas
 
 st.set_page_config(layout="wide")
 
-col_1, col_2 = st.columns(2)
+buffer_col, col_1, col_2, empty_col1 = st.columns([0.5, 2, 2, 0.5])
 
 with col_1:
     st.image("images/photo.png")  # width=500
@@ -20,12 +20,14 @@ with col_2:
     développement web.
     """
     st.info(content)
+    content_2 = """
+    Below you can find some of the apps i have built in Python. Feel free to contact me!
+    """
 
-content_2 = """
-Below you can find some of the apps i have built in Python. Feel free to contact me!
-"""
+    st.write(content_2)
 
-st.write(content_2)
+st.divider()
+
 
 col_3, empty_col,  col_4 = st.columns([1.5, 0.5, 1.5])
 
