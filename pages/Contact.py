@@ -15,5 +15,5 @@ From: {user_email}
     submit_btn = st.form_submit_button("Envoyer")
 
     if submit_btn:
-        send_email(message)
+        send_email(message.encode('utf-8'))
         st.success("Votre email a bien été envoyé. Merci.")
